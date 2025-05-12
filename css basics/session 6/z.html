@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Simple Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+
+    .navbar {
+      background-color: goldenrod;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .menu a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      background-image: url('https://tse4.mm.bing.net/th?id=OIP.ff4ttpy-FNZ5C2a34_zB8wHaFj&pid=Api&P=0&h=180');
+      background-size: cover;
+      background-position: center;
+      padding: 150px 20px;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: goldenrod;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: darkgoldenrod;
+    }
+
+    /* --- Testimonials Section --- */
+    .testimonials {
+      background-color: #111;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: goldenrod;
+    }
+
+    .testimonial-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .testimonial {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    .testimonial .author {
+      font-weight: bold;
+      color: goldenrod;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="brand">MyBrand</div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Default</a>
+      <a href="#">Text</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>welcoming you all</p>
+    <button>Click Me</button>
+  </div>
+
+  <!-- ✅ Testimonials Section -->
+  <div class="testimonials">
+    <h2>What People Are Saying</h2>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"Dharini's website is super aesthetic and professional! Totally loved it."</p>
+        <div class="author">— Aryan</div>
+      </div>
+      <div class="testimonial">
+        <p>"One of the cleanest and most creative designs I've seen from a student."</p>
+        <div class="author">— Priya, UI/UX Designer</div>
+      </div>
+      <div class="testimonial">
+        <p>"Smooth, elegant, and powerful — her frontend game is on point."</p>
+        <div class="author">— Rahul, MERN Mentor</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

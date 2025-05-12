@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+            width: 700px;
+            height: 700px;
+            background-color: beige;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            grid-template-areas: "header header login" "side main main" "footer footer footer";
+        
+        }
+        .box{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            background-color: blue;
+            /* margin:  10px; */
+        }
+        .header{
+            grid-area: header;
+            
+        }
+        .side{
+            grid-area: side;
+        }
+        .main{
+            grid-area: main;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+          </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box header">header</div>
+     <div class="box Login">login</div>
+     <div class="box side">side</div>
+     <div class="box Main">main</div>
+     <div class="box footer">footer</div>
+     </div>
+
+</body>
+</html>

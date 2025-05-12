@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Top Row */
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Middle Row */
+  .middle {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Boxes */
+  .box {
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .box1 {
+    flex: 1;
+    background-color: darkolivegreen;
+  }
+  
+  .box2 {
+    width: 150px;
+    background-color: yellowgreen;
+  }
+  
+  .box3 {
+    width: 150px;
+    background-color: pink;
+  }
+  
+  .box4 {
+    flex: 1;
+  }
+  
+  .box5 {
+    background-color: grey;
+  }
+  

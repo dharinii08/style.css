@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            width: 700px;
+        height: 700px;
+        background-color: beige;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          "brand navbar navbar"
+          "logo1 breaking ad3"
+          "ad2 breaking ad3"
+          "main main main"
+          "footer logo2 logo3";
+    }
+
+        .box
+         {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+      }
+
+      .brand {
+        grid-area: brand;
+      }
+      .navbar {
+        grid-area: navbar;
+      }
+      .logo1 {
+        grid-area: logo1;
+      }
+      .breaking {
+        grid-area: breaking;
+      }
+      .ad2 {
+        grid-area: ad2;
+      }
+      .ad3 {
+        grid-area: ad3;
+      }
+      .main {
+        grid-area: main;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .logo2 {
+        grid-area: logo2;
+      }
+      .logo3 {
+        grid-area: logo3;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box brand">brand</div>
+        <div class="box navbar">navbar</div>
+        <div class="box logo1">logo1</div>
+        <div class="box breaking">breaking</div>
+        <div class="box ad3">ad3</div>
+        <div class="box ad2">ad2</div>
+        <div class="box main">main</div>
+        <div class="box footer">footer</div>
+        <div class="box logo2">logo2</div>
+        <div class="box logo3">logo3</div>
+    </div>
+</body>
+</html>
